@@ -8,6 +8,7 @@
  */
 int main(void)
 {
-fwrite(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+int STDOUT_FILENO = 59;
+fwrite(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", STDOUT_FILENO);
 return (1);
 }
