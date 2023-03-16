@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h>
 
 /**
  * main - Entry point
@@ -9,6 +9,6 @@
 int main(void)
 {
 int STDOUT_FILENO = 59;
-fwrite(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", STDOUT_FILENO);
+fwrite(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", STDOUT_FILENO);
 return (1);
 }
