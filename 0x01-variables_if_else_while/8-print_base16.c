@@ -11,7 +11,7 @@ char n;
 int num;
 for (num = 0; num < 10; num++)
 {
-putchar(num);
+putchar('0' + num);
 }
 
 for (n = 'a'; n < 'g'; n++)
