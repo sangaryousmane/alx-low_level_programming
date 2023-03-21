@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <ctype.h>
 /**
 *_isalpha - checks for lowercase characters.
 *@c: Number to pass to _isalpha function
