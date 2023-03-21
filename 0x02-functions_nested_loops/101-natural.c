@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
-** sum_of_multiples - prints the sum of the multiples of 3 and 5
+* main - check for multiples of 3 and 5
 *
+* Return: 0 always
 */
 
-void sum_of_multiples(void)
+int  main(void)
 {
 int sum, i;
 sum = 0;
@@ -17,6 +17,6 @@ if ((i % 3 == 0) || (i % 5 == 0))
 sum += i;
 }
 }
-printf("%d", sum);
-_putchar('\n');
+printf("%d\n", sum);
+return (0);
 }
