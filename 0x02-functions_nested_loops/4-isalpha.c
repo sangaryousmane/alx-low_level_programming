@@ -8,12 +8,9 @@
 */
 int _isalpha(int c)
 {
-if (isalpha(c) || islower(c))
-{
-if (isupper(c))
+if (isalpha(c) || islower(c) || isupper(c))
 {
 return (1);
-}
 }
 else
 {
