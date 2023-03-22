@@ -19,7 +19,7 @@ fib3 = fib1 + fib2;
 printf(", %lu", fib3);
 
 fib1 = fib2;
-fib2 = fib2;
+fib2 = fib3;
 }
 printf("\n");
 return (0);
