@@ -17,11 +17,11 @@ printf("%ld ", num1);
 temp = num1 + num2;
 num1 = num2;
 num2 = temp;
+}
 
-if (i != n)
+if (n != 50)
 {
 _putchar(',');
-}
 }
 puts("\n");
 return (0);
