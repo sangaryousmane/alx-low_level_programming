@@ -14,13 +14,14 @@ long  temp, n = 50;
 for (i = 0; i < n; i++)
 {
 printf("%ld ", num1);
+temp = num1 + num2;
+num1 = num2;
+num2 = temp;
+
 if (i != n)
 {
 _putchar(',');
 }
-temp = num1 + num2;
-num1 = num2;
-num2 = temp;
 }
 puts("\n");
 return (0);
