@@ -24,9 +24,9 @@ for (i = 0; i < n; i++)
 {
 printf("%lu ", fibonacci[i]);
 
-if (i != 98)
+if (i != (n - 1))
 {
-printf(",");
+printf(", ");
 }
 }
 printf("\n");
