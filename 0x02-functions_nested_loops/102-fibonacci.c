@@ -8,11 +8,11 @@
 int main(void)
 {
 
-int i, num1 = 1, num2 = 2;
-int temp, n = 10;
+long long i, num1 = 1, num2 = 2;
+long long temp, n = 50;
 for (i = 0; i <= n; i++)
 {
-printf("%d, ", num1);
+printf("%lld, ", num1);
 temp = num1 + num2;
 num1 = num2;
 num2 = temp;
