@@ -19,7 +19,7 @@ printf("%ld, ", num1);
 }
 else
 {
-printf("%ld", num1);
+printf("%ld\n", num1);
 }
 temp = num1 + num2;
 num1 = num2;
