@@ -13,10 +13,10 @@ long i, num1 = 1, num2 = 2;
 long  temp, n = 50;
 for (i = 0; i < n; i++)
 {
-printf("%ld, ", num1);
-if (num1 == 20365011074)
+printf("%ld ", num1);
+if (i != n)
 {
-_putchar(' ');
+_putchar(',');
 }
 temp = num1 + num2;
 num1 = num2;
