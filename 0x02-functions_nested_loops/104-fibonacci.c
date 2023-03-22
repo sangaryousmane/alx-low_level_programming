@@ -22,9 +22,9 @@ fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 
 for (i = 0; i < n; i++)
 {
-printf("%lu ", fibonacci[i]);
+printf("%lu", fibonacci[i]);
 
-if (i != (n - 1))
+if (i != 98)
 {
 printf(", ");
 }
