@@ -9,7 +9,7 @@ int main(void)
 {
 
 int i, num1 = 1, num2 = 2;
-int temp, n;
+int temp, n = 10;
 for (i = 0; i <= n; i++)
 {
 printf("%d, ", num1);
