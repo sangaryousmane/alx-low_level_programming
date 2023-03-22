@@ -1,4 +1,4 @@
-#include <stdio.i>
+#include <stdio.h>
 /**
 *main - print the first n numbers of fibonacci sequence.
 *Return: always return 0
