@@ -22,6 +22,7 @@ if (num1 <= 20365011074)
 {
 _putchar(',');
 }
+}
 puts("\n");
 return (0);
 }
