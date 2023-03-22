@@ -12,7 +12,7 @@ long i, num1 = 1, num2 = 2;
 long  temp, n = 50;
 for (i = 0; i <= n; i++)
 {
-printf("%lld, ", num1);
+printf("%ld, ", num1);
 temp = num1 + num2;
 num1 = num2;
 num2 = temp;
