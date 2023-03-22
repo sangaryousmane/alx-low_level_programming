@@ -18,7 +18,7 @@ temp = num1 + num2;
 num1 = num2;
 num2 = temp;
 
-if (num1 <= 20365011074)
+if (num1 == 20365011074)
 {
 _putchar(',');
 }
