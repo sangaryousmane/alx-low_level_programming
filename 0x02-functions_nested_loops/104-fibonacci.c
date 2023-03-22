@@ -9,7 +9,7 @@
 int main(void)
 {
 
-unsigned long fibonacci[98];
+unsigned long fibonacci[100];
 int i, n = 98;
 
 fibonacci[0] = 1;
@@ -26,7 +26,7 @@ printf("%lu ", fibonacci[i]);
 
 if (i != 98)
 {
-printf(", ");
+printf(",");
 }
 }
 printf("\n");
