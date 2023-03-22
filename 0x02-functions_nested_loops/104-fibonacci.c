@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*main - print the first n numbers of fibonacci sequence.
+*main - print the first 98 numbers of fibonacci sequence followed by comma.
 *Return: always return 0
 *
 */
-
 int main(void)
 {
 
