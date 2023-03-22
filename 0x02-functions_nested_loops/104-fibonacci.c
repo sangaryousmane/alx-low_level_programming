@@ -9,7 +9,7 @@
 int main(void)
 {
 
-unsigned long fibonacci[103];
+unsigned long fibonacci[98];
 int i, n = 98;
 
 fibonacci[0] = 1;
