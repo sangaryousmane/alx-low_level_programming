@@ -9,21 +9,26 @@
 int main(void)
 {
 
-long i, num1 = 1, num2 = 2;
-long  temp, n = 98;
+unsigned long fibonacci[100];
+int i, n = 98;
+
+fibonacci[0] = 1;
+fibonacci[1] = 2;
+
+for (i = 2; i < n; i++)
+{
+fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+}
+
 for (i = 0; i < n; i++)
 {
-if (num1 != 1111202020)
+printf("%lu", fibonacci[1]);
+
+if (i != 98)
 {
-printf("%ld, ", num1);
+printf(", ");
 }
-else
-{
-printf("%ld\n", num1);
 }
-temp = num1 + num2;
-num1 = num2;
-num2 = temp;
-}
+printf("\n");
 return (0);
 }
