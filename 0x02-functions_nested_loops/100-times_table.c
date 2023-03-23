@@ -4,35 +4,40 @@
 *@n: pass to function as parameter.
 *Return void
 */
-void  print_times_table(int n)
+void print_times_table(int n)
 {
-int answer, i, j;
 
-if (n < 0 || n > 15)
+int digit, mult;
+int result;
+if (n <= 15 && n >= 0)
 {
-return;
-}
-
-for (i = 0; i <= n; i++)
+for (digit = 0; digit <= n; digit++)
 {
 _putchar('0');
-for (j = 0; j <= n ; j++)
+
+for (mult = 1; mult <= n; mult++)
 {
-answer = i * j;
 _putchar(',');
 _putchar(' ');
-
-if (answer <= n)
+result = digit * mult;
+if (result <= 99)
 {
 _putchar(' ');
-_putchar(answer + '0');
 }
-else
+if (result <= 9)
+_putchar(' ');
+if (result >= 100)
 {
-_putchar((answer / 10) + '0');
-_putchar((answer % 10) + '0');
+_putchar((result / 100) + '0');
+_putchar((result / 10) % 10 + '0');
 }
+else if (result >= 10 != 0)
+{
+_putchar((result / 10) + '0');
+}
+_putchar((result % 10) + '0');
 }
 _putchar('\n');
+}
 }
 }
