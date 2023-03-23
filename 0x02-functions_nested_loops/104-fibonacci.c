@@ -8,18 +8,38 @@
 int main(void)
 {
 
-int i, n = 98;
-unsigned long fib1 = 1, fib2 = 2, fib3;
-printf("%lu, %lu", fib1, fib2);
+unsigned long int fiba, fiba1, fiba2, fib_b, fib_b1, fib_b2, fib_c;
+unsigned long int fib_c1, fib_c2, fib_d, fib_e, div;
 
-for (i = 3; i <= n; i++)
+fiba = 1;
+fib_b = 2;
+div = 1000000000;
+fib_c = fiba + fib_b;
+
+printf("%lu, ", fiba);
+printf("%lu, ", fib_b);
+
+for (fib_d = 3; fib_d < 89; fib_d++)
 {
-fib3 = fib1 + fib2;
-printf(", %lu", fib3);
-
-fib1 = fib2;
-fib2 = fib3;
+printf("%lu, ", fib_c);
+fiba = fib_b;
+fib_b = fib_c;
+fib_c = fiba + fib_b;
 }
-printf("\n");
+fib_b1 = fib_b / div;
+fib_b2 = fib_b % div;
+fib_c1 = fib_c / div;
+fib_c2 = fib_c % div;
+for (fib_e = 89; fib_e < 98; fib_e++)
+{
+printf("%lu%lu, ", fib_c1, fib_c2);
+fiba1 = fib_b1;
+fiba2 = fib_b2;
+fib_b1 = fib_c1;
+fib_b2 = fib_c2;
+fib_c1 = fiba1 + fib_b1 + ((fiba2 + fib_b2) / div);
+fib_c2 = (fiba2 + fib_b2) % div;
+}
+printf("%lu%lu\n", fib_c1, fib_c2);
 return (0);
 }
