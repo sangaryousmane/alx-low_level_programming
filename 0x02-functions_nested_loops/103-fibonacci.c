@@ -13,8 +13,6 @@ int prev_term = 1, current_term = 2, next_term = 0;
 
 while (current_term <= n)
 {
-
-}
 if (current_term % 2 == 0)
 {
 sum += current_term;
@@ -22,7 +20,7 @@ sum += current_term;
 next_term = prev_term + current_term;
 prev_term = current_term;
 current_term = next_term;
-
+}
 printf("%d", sum);
 return (0);
 }
