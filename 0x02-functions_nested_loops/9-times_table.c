@@ -14,26 +14,26 @@ int product;
 
 for (i = 0; i <= 9; i++)
 {
-putchar('0');
+_putchar('0');
 
 for (j = 1; j <= 9; j++)
 {
 product = j * i;
-putchar(',');
+_putchar(',');
 
-putchar(' ');
+_putchar(' ');
 
 if (product <= 9)
 {
-putchar(' ');
-putchar(product + '0');
+_putchar(' ');
+_putchar(product + '0');
 }
 else
 {
-putchar(product / 10 + '0');
-putchar(product % 10 + '0');
+_putchar(product / 10 + '0');
+_putchar(product % 10 + '0');
 }
 }
-putchar('\n');
+_putchar('\n');
 }
 }
