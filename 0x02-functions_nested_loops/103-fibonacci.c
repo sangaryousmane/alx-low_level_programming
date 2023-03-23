@@ -22,7 +22,8 @@ sum += current_term;
 next_term = prev_term + current_term;
 prev_term = current_term;
 current_term = next_term;
-}
+
 printf("%d", sum);
 return (0);
 }
+
