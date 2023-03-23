@@ -36,3 +36,4 @@ putchar(product % 10 + '0');
 }
 putchar('\n');
 }
+}
