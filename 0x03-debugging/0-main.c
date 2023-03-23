@@ -2,23 +2,12 @@
 #include <stdio.h>
 
 /**
-* test_positive_negative - test for positive or negative value
+* main - test for positive or negative value
 * Return: 0
 */
-int test_positive_negative(void)
+int main(void)
 {
-int value;
-if (positive_or_negative(value) > 0)
-{
-printf("%d is positive", value);
-}
-if (positive_or_negative(value) == 0)
-{
-printf("%d is zero", value);
-}
-else
-{
-printf("%d is negative", value);
-}
+int i = 0;
+postitive_or_negative(i);
 return (0);
 }
