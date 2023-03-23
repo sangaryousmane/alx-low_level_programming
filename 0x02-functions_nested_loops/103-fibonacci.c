@@ -21,7 +21,7 @@ next_term = prev_term + current_term;
 prev_term = current_term;
 current_term = next_term;
 }
-printf("%d", sum);
+printf("%d\n", sum);
 return (0);
 }
 
