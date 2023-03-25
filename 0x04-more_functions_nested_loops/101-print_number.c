@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * print_number - print integers without using arrays, pointers or hard coding
 * @n: parameter to the print_number function
@@ -17,5 +16,5 @@ if (num > 9)
 {
 print_number(num / 10);
 }
-_putchar(num % 10);
+_putchar(num % 10 + '0');
 }
