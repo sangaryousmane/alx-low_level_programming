@@ -2,7 +2,6 @@
 /**
 * print_number - print integers without using arrays, pointers or hard coding
 * @n: parameter to the print_number function
-* Return nothing
 */
 void print_number(int n)
 {
