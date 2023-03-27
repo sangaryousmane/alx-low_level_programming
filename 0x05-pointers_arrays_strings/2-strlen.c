@@ -2,11 +2,11 @@
 #include <string.h>
 
 /**
-*
-* Return the lenght of the argument
+* _strlen - return the length of the @s argument
+* Return: the size of the argument
 * @s: array of string
 */
 int _strlen(char *s)
 {
-return strlen(s);
+return (strlen(s));
 }
