@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
 * _puts - print strings with a newline
@@ -8,5 +9,5 @@
 void _puts(char *s)
 {
 
-puts(*s);
+puts(s);
 }
