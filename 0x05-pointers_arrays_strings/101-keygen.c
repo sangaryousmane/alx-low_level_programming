@@ -1,7 +1,7 @@
 #include <time.h>
 #include <stdio.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * main - is the entry point to generate a random password
  * Return: the password after generation
