@@ -13,6 +13,8 @@ int i;
 int end;
 end = n - 1;
 
+if (n > 0)
+{
 for (i = 0; i < n; i++)
 {
 printf("%d", *(a + i));
@@ -21,9 +23,11 @@ if (i != end)
 {
 printf(", ");
 }
-else
-{
+}
 _putchar('\n');
 }
+else
+{
+_putchar(' ');
 }
 }
