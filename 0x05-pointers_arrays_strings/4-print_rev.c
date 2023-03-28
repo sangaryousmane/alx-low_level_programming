@@ -8,7 +8,7 @@
 void print_rev(char *s)
 {
 int len, i = 0;
-len = strlen(s);
+len = to_strlen(s);
 for (i = len - 1; i >= 0; i++)
 {
 _putchar(s[i]);
@@ -16,3 +16,17 @@ _putchar(s[i]);
 _putchar('\n');
 }
 
+/**
+* to_strlen - returns length of @s
+* @s: parameter of the function
+* Return: lenght of the function
+*/
+int to_strlen(char *s)
+{
+int i, count = 0;
+for (i = 0; s[i] != '\0'; i++)
+{
+count++;
+}
+return (0);
+}
