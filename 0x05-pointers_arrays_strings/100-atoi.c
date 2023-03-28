@@ -22,6 +22,6 @@ else if (number > 0)
 break;
 }
 } while (*s++);
-result = number * sign;
+result = (sign)*(number);
 return (result);
 }
