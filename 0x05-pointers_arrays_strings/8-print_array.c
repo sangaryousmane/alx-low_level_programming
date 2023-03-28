@@ -17,12 +17,13 @@ if (n > 0)
 {
 for (i = 0; i < n; i++)
 {
-printf("%d", *(a + i));
-
 if (i != end)
 {
-printf(", ");
+printf("%d, ", *(a + i));
 }
+else
+{
+printf("%d", *(a + i));
 }
 _putchar('\n');
 }
