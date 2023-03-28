@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * print_array - print arrays in right order
@@ -18,7 +19,7 @@ printf("%d", *(a + i));
 
 if (i != end)
 {
-printf(",");
+printf(", ");
 }
 else
 {
