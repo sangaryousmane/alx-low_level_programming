@@ -7,7 +7,7 @@
 int _atoi(char *s)
 {
 int sign = 1;
-unsigned int number = 0;
+unsigned int number = 0, result;
 do {
 if (*s == '-')
 {
@@ -22,5 +22,6 @@ else if (number > 0)
 break;
 }
 } while (*s++);
-return (number * sign);
+result = number * sign;
+return (result);
 }
