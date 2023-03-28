@@ -1,6 +1,20 @@
 #include "main.h"
 #include <string.h>
 /**
+* to_strlen - returns length of @s
+* @s: parameter of the function
+* Return: lenght of the function
+*/
+int to_strlen(char *s)
+{
+int i, count = 0;
+for (i = 0; s[i] != '\0'; i++)
+{
+count++;
+}
+return (0);
+}
+/**
 * print_rev - prints a string in reverse
 * @s: argument to the print_rev function
 * Return nothing
@@ -16,17 +30,3 @@ _putchar(s[i]);
 _putchar('\n');
 }
 
-/**
-* to_strlen - returns length of @s
-* @s: parameter of the function
-* Return: lenght of the function
-*/
-int to_strlen(char *s)
-{
-int i, count = 0;
-for (i = 0; s[i] != '\0'; i++)
-{
-count++;
-}
-return (0);
-}
