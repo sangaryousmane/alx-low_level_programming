@@ -1,8 +1,5 @@
 #include <stdio.h>
-/**
-* main - mimick magic
-* Return: nothing
-*/
+
 int main(void)
 {
 int n;
