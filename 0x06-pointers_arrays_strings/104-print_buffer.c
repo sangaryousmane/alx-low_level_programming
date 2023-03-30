@@ -1,70 +1,55 @@
 /**
- * print_line - prints a s bytes of a buffer
- * @c: buffer to print
- * @s: bytes of buffer to print
- * @l: line of buffer to print
- *
- * Return: void
+ * print_buffer - prints a buffer to output
+ * @b: a pointer that points to char array
+ * @size: int that hold size
+ * Return: nothing
  */
 
-void print_line(char *c, int s, int l)
+void print_buffer(char *b, int size)
 {
-int j, k;
 
-for (j = 0; j <= 9; j++)
+int outer, inner;
+outer = 0;
+
+while (outer < size)
 {
-if (j <= s)
+printf("%08x: ", outer);
+for (inner = outer; inner < outer + 10; inner++)
 {
-printf("%02x", c[l * 10 + j]);
+if (inner < size)
+{
+printf("%02x", (unsigned char) b[inner]);
 }
 else
 {
 printf("  ");
 }
-if (j % 2)
+if (inner % 2)
 {
 putchar(' ');
 }
 }
-for (k = 0; k <= s; k++)
+for (inner = outer; inner < outer + 10; inner++)
 {
-if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
+if (inner >= size)
 {
-putchar(c[l * 10 + k]);
+break;
+}
+
+if (b[inner] >= ' ' && *(b + inner) <= '~')
+{
+putchar(*(b + inner));
 }
 else
 {
 putchar('.');
 }
 }
-}
-
-/**
- * print_buffer - prints a buffer
- * @b: buffer to print
- * @size: size of buffer
- *
- * Return: void
- */
-void print_buffer(char *b, int size)
-{
-int i;
-
-for (i = 0; i <= (size - 1) / 10 && size; i++)
-{
-printf("%08x: ", i * 10);
-if (i < size / 10)
-{
-print_line(b, 9, i);
-}
-else
-{
-print_line(b, size % 10 - 1, i);
-}
-putchar('\n');
-}
-if (size == 0)
+outer += 10;
+if (outer < size)
 {
 putchar('\n');
 }
+}
+putchar('\n');
 }
