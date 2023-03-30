@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * print_number - print numbers
 * @n: argument
@@ -7,7 +6,7 @@
 */
 void print_number(int n)
 {
-int num = n;
+long int num = n;
 
 if (n < 0)
 {
