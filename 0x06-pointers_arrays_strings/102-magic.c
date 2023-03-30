@@ -1,8 +1,5 @@
 #include <stdio.h>
-/**
-* main - magic file
-* Return: nothing
-*/
+
 int main(void)
 {
 int n;
