@@ -11,4 +11,7 @@ void print_array(int *a, int n);
 char *string_toupper(char *);
 void print_number(int n);
 char *cap_string(char *);
+void print_buffer(char *b, int size);
+void print_line(char *c, int s, int l);
 char *rot13(char *);
+int main(void);
