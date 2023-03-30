@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
 * reverse_array - reverse an array
 * @a: the array
@@ -13,7 +13,7 @@ int end = n - 1;
 for (i = end; i < n / 2; i--)
 {
 temp = a[n - 1 - i];
-a[i] = a[n - 1 - i];
+a[n - 1 - i] = a[i];
 a[i] = temp;
 }
 }
