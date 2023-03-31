@@ -6,13 +6,9 @@
  * @size: int that hold size
  * Return: nothing
  */
-
 void print_buffer(char *b, int size)
 {
-
-int outer, inner;
-outer = 0;
-
+int inner, outer = 0;
 while (outer < size)
 {
 printf("%08x: ", outer);
@@ -37,15 +33,10 @@ if (inner >= size)
 {
 break;
 }
-
 if (b[inner] >= ' ' && *(b + inner) <= '~')
-{
 _putchar(*(b + inner));
-}
 else
-{
 _putchar('.');
-}
 }
 outer += 10;
 if (outer < size)
