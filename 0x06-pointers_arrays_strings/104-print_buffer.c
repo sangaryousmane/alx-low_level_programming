@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 /**
  * print_buffer - prints a buffer to output
  * @b: a pointer that points to char array
@@ -38,18 +40,18 @@ break;
 
 if (b[inner] >= ' ' && *(b + inner) <= '~')
 {
-putchar(*(b + inner));
+_putchar(*(b + inner));
 }
 else
 {
-putchar('.');
+_putchar('.');
 }
 }
 outer += 10;
 if (outer < size)
 {
-putchar('\n');
+_putchar('\n');
 }
 }
-putchar('\n');
+_putchar('\n');
 }
