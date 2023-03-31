@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
