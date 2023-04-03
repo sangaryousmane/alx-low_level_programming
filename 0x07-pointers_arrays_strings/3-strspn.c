@@ -21,9 +21,10 @@ bytes++;
 break;
 }
 }
-if (!accept[i])
+if (!accept[j])
 {
 break;
+}
 }
 return (bytes);
 }
