@@ -18,5 +18,5 @@ return (&s[index]);
 }
 index++;
 }
-return (NULL);
+return ('\0');
 }
