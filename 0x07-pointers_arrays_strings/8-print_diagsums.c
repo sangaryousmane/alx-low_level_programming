@@ -8,19 +8,21 @@
  */
 void print_diagsums(int *a, int size)
 {
-int index = 0, sum1 = 0, sum2 = 0;
-while (index < size * size)
-{
-if (index % (size + 1) == 0)
+int index = 0;
+int sum1 = 0, sum2 = 0;
+while (index < size)
 {
 sum1 += a[index];
+a += size;
+index++;
 }
-if (index % (size - 1) == 0 && index != 0 && index != size * (size - 1))
+a -= size;
+index = 0;
+while (index < size)
 {
 sum2 += a[index];
-}
+a -= size;
 index++;
 }
 printf("%d, %d\n", sum1, sum2);
-
 }
