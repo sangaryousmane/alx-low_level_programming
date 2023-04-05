@@ -17,7 +17,7 @@ while (*haystack != '\0')
 if (*haystack == *needle)
 {
 char *p;
-*p = _strstr(haystack + 1, needle + 1);
+p = _strstr(haystack + 1, needle + 1);
 
 if (p != NULL)
 {
