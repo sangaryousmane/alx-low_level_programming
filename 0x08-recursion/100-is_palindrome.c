@@ -39,6 +39,8 @@ int end = _strlen_recursion(s);
 int result = _palindrome(s, 0, end - 1);
 
 if (result == 1)
+{
 return (1);
+}
 return (0);
 }
