@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
 * _palindrome - check for palindrome
 * @s: pointer array
@@ -28,7 +28,6 @@ return (_palindrome(s, start + 1, end - 1));
 
 
 
-int _strlen_recursion(char *s);
 /**
 * is_palindrome - returns 1 if it is palindrome else 0
 * @s: string to check
@@ -36,7 +35,7 @@ int _strlen_recursion(char *s);
 */
 int is_palindrome(char *s)
 {
-int end = _strlen_recursion(s);
+int end = strlen(s);
 int result = _palindrome(s, 0, end - 1);
 
 if (result == 1)
