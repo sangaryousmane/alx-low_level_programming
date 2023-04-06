@@ -28,6 +28,7 @@ return (_palindrome(s, start + 1, end - 1));
 
 
 
+int _strlen_recursion(char *s);
 /**
 * is_palindrome - returns 1 if it is palindrome else 0
 * @s: string to check
