@@ -28,7 +28,7 @@ return (prime_helper(n, 2));
  */
 int prime_helper(int n, int i)
 {
-if (i == 0)
+if (i == n)
 {
 return (1);
 }
