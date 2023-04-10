@@ -8,7 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-int num_of_args = argc - 1;
-printf("%d\n", num_of_args);
+printf("%d\n", argc - 1);
 return (0);
 }
