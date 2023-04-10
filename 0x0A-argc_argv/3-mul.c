@@ -6,9 +6,8 @@
 * @argv: arguments pass
 * Return: zerro is successful
 */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
-int i = 1;
 int product = 0;
 if (argc < 2)
 {
