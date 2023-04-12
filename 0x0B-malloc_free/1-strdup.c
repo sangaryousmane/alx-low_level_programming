@@ -23,7 +23,7 @@ return (length);
 */
 char *_strdup(char *str)
 {
-int i = 0, length;
+int i, length;
 char *duplicate;
 if (str == NULL)
 {
@@ -37,7 +37,7 @@ if (duplicate == NULL)
 {
 return (NULL);
 }
-for (; i < length; i++)
+for (i = 0; i < length; i++)
 {
 duplicate[i] = str[i];
 }
