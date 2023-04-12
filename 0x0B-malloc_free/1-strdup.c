@@ -31,7 +31,7 @@ return (NULL);
 }
 int length;
 length = _strlen(str);
-duplicate = malloc(sizeof(char) * (length + 1);
+duplicate = malloc(sizeof(char) * (length + 1));
 
 if (duplicate == NULL)
 {
