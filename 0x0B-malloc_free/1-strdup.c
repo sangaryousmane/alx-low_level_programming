@@ -23,13 +23,13 @@ return (length);
 */
 char *_strdup(char *str)
 {
-int i = 0;
+int i = 0, length;
 char *duplicate;
 if (str == NULL)
 {
 return (NULL);
 }
-int length;
+
 length = _strlen(str);
 duplicate = malloc(sizeof(char) * (length + 1));
 
@@ -41,7 +41,7 @@ for (; i < length; i++)
 {
 duplicate[i] = str[i];
 }
-duplicate[i] = '\0';
+duplicate[length] = '\0';
 free(duplicate);
 return (duplicate);
 }
