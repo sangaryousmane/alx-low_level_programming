@@ -29,14 +29,14 @@ if (str == NULL)
 {
 return (NULL);
 }
-int length = _strlen(str);
-duplicate = malloc(sizeof(char) (length + 1);
+int length;
+length = _strlen(str);
+duplicate = malloc(sizeof(char) * (length + 1);
 
 if (duplicate == NULL)
 {
 return (NULL);
 }
-
 for (; i < length; i++)
 {
 duplicate[i] = str[i];
@@ -45,3 +45,4 @@ duplicate[i] = '\0';
 free(duplicate);
 return (duplicate);
 }
+
