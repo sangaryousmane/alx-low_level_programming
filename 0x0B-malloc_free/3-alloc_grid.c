@@ -38,14 +38,14 @@ return (NULL);
 }
 i++;
 }
-i = 0;
+
 while (i < height)
 {
 for (j = 0; j < width; j++)
 {
 arr2D[i][j] = 0;
-i++;
 }
+i++;
 }
 return (arr2D);
 }
