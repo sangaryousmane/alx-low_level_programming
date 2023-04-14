@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
 * array_range - an array of integers
 * @min: the first element
@@ -9,7 +10,8 @@
 int *array_range(int min, int max)
 {
 int *new_array;
-int i = 0, j, array_size;
+int i = 0, j;
+int array_size;
 
 if (min > max)
 {
