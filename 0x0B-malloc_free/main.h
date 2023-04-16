@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int _putchar(int c);
 int _strlen(char *s);
