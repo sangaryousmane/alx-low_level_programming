@@ -37,11 +37,11 @@ if (duplicate == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < length; i++)
+for (i = 0; i <= length; i++)
 {
 duplicate[i] = str[i];
 }
-duplicate[length] = '\0';
+duplicate[i] = '\0';
 free(duplicate);
 return (duplicate);
 }
