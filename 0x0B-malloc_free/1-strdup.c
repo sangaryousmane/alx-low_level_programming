@@ -22,6 +22,5 @@ for (i = 0; i <= len; i++)
 {
 new_str[i] = str[i];
 }
-free(new_str);
 return (new_str);
 }
