@@ -4,11 +4,12 @@
 #include <stdio.h>
 
 /**
-* struct dog - structure datatype
+* struct dog - data structure
 * @name: name of dog
 * @age: age of dog
 * @owner: dog's owner
-* Description: store info for dogs
+*
+* Description: store info for dogs name, age, and owner
 */
 struct dog
 {
