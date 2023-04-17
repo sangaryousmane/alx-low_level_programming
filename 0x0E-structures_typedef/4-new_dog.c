@@ -1,5 +1,6 @@
 #include <string.h>
 #include "dog.h"
+#include <stdlib.h>
 /**
 * new_dog - function
 * @name: name of dog
@@ -20,7 +21,6 @@ if (!new_dog)
 {
 return (NULL);
 }
-strlen(name);
 name_length = strlen(name);
 new_dog_name = malloc((name_length + 1) * sizeof(char));
 if (!new_dog_name)
@@ -30,7 +30,6 @@ return (NULL);
 }
 strcpy(new_dog_name, name);
 
-strlen(owner);
 owner_length = strlen(owner);
 new_dog_owner = malloc(sizeof(char) * (owner_length + 1));
 if (new_dog_owner == NULL)
