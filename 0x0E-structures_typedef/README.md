@@ -9,7 +9,7 @@ age, type = float
 owner, type = char *
 
 2. Write a function that initialize a variable of type struct dog
-<a href="https://github.com/sangaryousmane/alx-low_level_programming/blob/master/0x0E-structures_typedef/1-init_dog.c">dog.h</a>
+<a href="https://github.com/sangaryousmane/alx-low_level_programming/blob/master/0x0E-structures_typedef/1-init_dog.c">Initialize dog</a>
 Prototype: void init_dog(struct dog *d, char *name, float age, char *owner);
 
 3. Write a function that prints a struct dog
