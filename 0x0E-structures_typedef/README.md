@@ -24,7 +24,7 @@ If d is NULL print nothing.
 <a href="https://github.com/sangaryousmane/alx-low_level_programming/blob/master/0x0E-structures_typedef/dog.h">Create a new type dog</a>
 
 5. Write a function that creates a new dog.
-<a href="https://github.com/sangaryousmane/alx-low_level_programming/blob/master/0x0E-structures_typedef/4-new_dog.cc">Create new dog</a>
+<a href="https://github.com/sangaryousmane/alx-low_level_programming/blob/master/0x0E-structures_typedef/4-new_dog.c">Create new dog</a>
 Prototype: dog_t *new_dog(char *name, float age, char *owner);
 You have to store a copy of name and owner
 Return NULL if the function fails
