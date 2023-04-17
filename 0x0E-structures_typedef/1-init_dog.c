@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
+#define NULL (void *)0
 /**
 * init_dog - initialize a variable to type struct dog
 * @d: dog to initialize
