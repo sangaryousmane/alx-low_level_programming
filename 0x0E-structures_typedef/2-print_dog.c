@@ -20,7 +20,7 @@ if ((*d).name == NULL)
 }
 if ((*d).owner == NULL)
 {
-((*d).owner == "(nil)";
+(*d).owner = "(nil)";
 }
 else
 {
