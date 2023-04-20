@@ -13,16 +13,16 @@ int i = 0;
 
 if (size > 0)
 {
-if (array != NULL && cmp != NULL)
+if (array && cmp)
 {
-for (; i<size; i++)
+for (; i < size; i++)
 {
 if (cmp(array[i]))
 {
-return i;
+return (i);
 }
 }
 }
 }
-return -1;
+return (-1);
 }
