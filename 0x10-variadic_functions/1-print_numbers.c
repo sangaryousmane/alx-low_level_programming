@@ -2,7 +2,7 @@
 
 /**
 * print_numbers - prints numbers followed by a newline
-* @separator: the string of characters to printer btw nums 
+* @separator: the string of characters to printer btw nums
 * @n: number integers passed to the function
 * Return: nothing
 */
@@ -22,7 +22,7 @@ if (i != end && separator != NULL)
 {
 printf("%s", separator);
 }
+}
 _putchar('\n');
 va_end(numbers);
-}
 }
