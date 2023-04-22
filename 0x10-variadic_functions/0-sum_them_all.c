@@ -14,10 +14,13 @@ unsigned int i = 0;
 int total = 0;
 va_start(numbers, n);
 
+if (n > 0)
+{
 for (; i < n; i++)
 {
 total = total + va_arg(numbers, int);
 }
 va_end(numbers);
+}
 return (total);
 }
