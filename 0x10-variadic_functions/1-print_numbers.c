@@ -21,6 +21,6 @@ if (i != (n - 1) && separator != NULL)
 printf("%s", separator);
 }
 }
-_putchar('\n');
+printf('\n');
 va_end(numbers);
 }
