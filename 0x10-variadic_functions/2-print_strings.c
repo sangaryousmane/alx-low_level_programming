@@ -26,7 +26,7 @@ case 0:
 printf("%s", "(nil)");
 break;
 }
-if (counter != n - 1 && separator)
+if (counter != (n - 1) && separator)
 {
 printf("%s", separator);
 }
