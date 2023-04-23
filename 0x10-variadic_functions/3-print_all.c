@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
 * print_formatted_output - prints anything
 * @format: the format to print
