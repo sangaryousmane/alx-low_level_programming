@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
 * print_strings - prints strings, followed by a newline
 * @separator: the string to print
@@ -23,7 +23,7 @@ printf("%s", s);
 break;
 
 case 0:
-printf("%s", "(nil)");
+printf("(nil)");
 break;
 }
 if (counter != (n - 1) && separator)
