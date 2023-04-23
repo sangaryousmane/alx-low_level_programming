@@ -16,7 +16,7 @@ va_start(strings, n);
 for (; counter < n; counter++)
 {
 s = va_arg(strings, char *);
-switch (s)
+switch (s != NULL)
 {
 case 1:
 printf("%s", s);
