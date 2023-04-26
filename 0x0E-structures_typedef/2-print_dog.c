@@ -16,11 +16,11 @@ printf("Name: (nil)\n");
 }
 if (d->age <= 0)
 {
-printf("Age:%f\n", d->age);
+printf("Age: %f\n", d->age);
 }
 if (d->owner == NULL)
 {
-printf("Owner:(nil");
+printf("Owner: (nil");
 }
 else
 {
