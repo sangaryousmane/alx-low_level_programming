@@ -17,5 +17,8 @@ new_list->next = (*head);
 (*head) = new_list;
 return (new_list);
 }
+else
+{
 return (NULL);
+}
 }
