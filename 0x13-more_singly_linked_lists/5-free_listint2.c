@@ -7,19 +7,15 @@
 */
 void free_listint2(listint_t **head)
 {
-listint_t *t;
-listint_t *start;
-if (head != NULL)
-{
-for (start = *head; start != NULL; start = t)
-{
-t = start->next;
-free(start);
-}
-head = NULL;
-}
-else
+listint_t *tmp;
+if (head == NULL)
 {
 return;
 }
+for (listint_t *current = *head; current != NULL; current = tmp)
+{
+tmp = current->next;
+free(current);
+}
+*head = NULL;
 }
