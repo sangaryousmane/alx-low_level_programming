@@ -16,7 +16,7 @@ fast = fast->next->next;
 if (slow == fast)
 {
 slow = head;
-for (; slow != fast; slow = slow->next; fast = fast->next);
+for (; slow != fast; slow = slow->next, fast = fast->next);
 return (slow);
 }
 }
