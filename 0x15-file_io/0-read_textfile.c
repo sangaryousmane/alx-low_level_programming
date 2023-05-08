@@ -18,7 +18,7 @@ if (filename == NULL)
 return (0);
 }
 
-code = open(filename, _O_RDONLY);
+code = open(filename, 0x0000);
 if (code == -1)
 {
 return (0);
