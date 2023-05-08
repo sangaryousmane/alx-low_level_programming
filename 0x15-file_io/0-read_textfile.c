@@ -13,19 +13,19 @@ ssize_t read_file, write_file;
 int code;
 char *buffer;
 
-if (!filename)
+if (filename == NULL)
 {
 return (0);
 }
 
-code = open(filename, 0x0000);
+code = open(filename, _O_RDONLY);
 if (code == -1)
 {
 return (0);
 }
 buffer = malloc(sizeof(char) * (letters));
 
-if (!buffer)
+if (buffer == NULL)
 {
 return (0);
 }
