@@ -9,7 +9,7 @@
 int create_file(const char *filename, char *text_content)
 {
 
-int code;
+int code, write_file;
 if (!filename)
 {
 return (-1);
@@ -20,7 +20,12 @@ if (code == -1)
 write(code, "fails", sizeof("fails"));
 return (-1);
 }
-write(code, text_content, sizeof(text_content));
+write_file = write(code, text_content, sizeof(text_content));
 close(code);
+
+if (write_file < 0)
+{
+return (-1);
+}
 return (1);
 }
