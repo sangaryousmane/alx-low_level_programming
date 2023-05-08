@@ -8,41 +8,28 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-int code, write_;
-int length = 0, i = 0;
-if (filename == NULL)
+int file_handler, t, length = 0;
+int i;
+if (!filename)
+return (-1);
+file_handler = open(filename, 0x0100 | 0x0002 | 0x0200, 0600);
+if (file_handler < 0)
 {
 return (-1);
 }
-code = open(filename, O_WRONLY | O_TRUNC, 0600);
-if (code < 0)
+if (text_content)
 {
-return (-1);
-}
-if (text_content != NULL)
-{
-while (*(text_content + length))
+for (i = 0; *(text_content + i); i++)
 {
 length++;
-for (; i < length; i++)
-{
-switch (*(text_content + i))
-{
-case '\n':
-write_ = write(code, "\n", 1);
-break;
-default:
-write_ = write(code, text_content + i, 1);
-break;
 }
-if (write_ < 0)
+t = write(file_handler, text_content, length);
+if (t != length)
 {
-close(code);
+close(file_handler);
 return (-1);
 }
 }
-}
-}
-close(code);
+close(file_handler);
 return (1);
 }
