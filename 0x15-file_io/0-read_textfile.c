@@ -19,9 +19,13 @@ return (0);
 }
 
 code = open(filename, 0x0000);
+if (code == -1)
+{
+return (0);
+}
 buffer = malloc(sizeof(char) * (letters));
 
-if ((code == -1) || (!buffer))
+if (!buffer)
 {
 return (0);
 }
