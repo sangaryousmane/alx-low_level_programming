@@ -21,8 +21,8 @@ if (file_d_code < 0)
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-file_write = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-while ((read_ = read(file_d_code, buffer, BUFSIZ)) > 0)
+file_write = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+while ((read_ = read(file_d_code, buffer, 512)) > 0)
 {
 if (file_write < 0 || write(file_write, buffer, read_) != read_)
 {
