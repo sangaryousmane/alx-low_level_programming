@@ -33,6 +33,10 @@ free(buffer);
 return (0);
 }
 write_file = write(STDOUT_FILENO, buffer, read_file);
+if (write_file < 0)
+{
+return (0);
+}
 close(fd);
 free(buffer);
 return (write_file);
