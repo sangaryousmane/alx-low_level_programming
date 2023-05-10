@@ -25,18 +25,9 @@ if (!buffer)
 {
 return (0);
 }
-read_file = read(fd, buffer, letters);
-if (read_file < 0)
-{
-free(buffer);
-return (0);
-}
+read_file = read(fd, buffer, letters)
 write_file = write(STDOUT_FILENO, buffer, read_file);
-if (write_file < 0)
-{
-return (0);
-}
-close(fd);
 free(buffer);
+close(fd);
 return (write_file);
 }
