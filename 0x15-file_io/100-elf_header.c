@@ -1,4 +1,11 @@
 #include "main.h"
+#include <elf.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * check - Checks if a file is an ELF file.
@@ -157,7 +164,7 @@ printf("  ABI Version:                       %d\n", j[EI_ABIVERSION]);
  */
 void print_type(unsigned int type_, unsigned char *j)
 {
-if (e_ident[EI_DATA] == ELFDATA2MSB)
+if (j[EI_DATA] == ELFDATA2MSB)
 {
 type_ >>= 8;
 }
