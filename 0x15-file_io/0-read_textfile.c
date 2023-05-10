@@ -41,5 +41,6 @@ free(buf);
 return (0);
 }
 free(buf);
+close(code);
 return (write_file);
 }
