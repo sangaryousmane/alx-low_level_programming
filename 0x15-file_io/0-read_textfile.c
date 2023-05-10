@@ -16,8 +16,23 @@ if (code)
 return (0);
 }
 buffer = malloc(sizeof(char) * letters);
+if (!buffer)
+{
+return (0);
+}
 read_from = read(code, buffer, letters);
+if (read_from)
+{
+free(read_from);
+return (0);
+}
 write_to = write(STDOUT_FILENO, buffer, read_from);
+
+if (write_to)
+{
+free(write_to);
+return (0);
+}
 free(buffer);
 close(code);
 return (write_to);
