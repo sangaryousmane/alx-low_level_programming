@@ -25,8 +25,16 @@ if (!buffer)
 {
 return (0);
 }
-read_file = read(fd, buffer, letters)
+read_file = read(fd, buffer, letters);
+if (read_file)
+{
+return (0);
+}
 write_file = write(STDOUT_FILENO, buffer, read_file);
+if (write_file)
+{
+return (0);
+}
 free(buffer);
 close(fd);
 return (write_file);
