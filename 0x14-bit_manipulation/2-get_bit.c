@@ -14,11 +14,10 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		return (0);
 	}
-	
 	while (n != 0 && index < 64)
 	{
 		if (index == 0)
-			return ( n & 1);
+			return (n & 1);
 		n >>= 1;
 		index--;
 	}
