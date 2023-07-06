@@ -8,7 +8,7 @@
 * @n: number
 * Return: the value of the bit at index index or -1 if an error occured
 */
-int get_bit(unsigned int long int n, unsigned int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	if (n == 0 && index <= 63)
 	{
@@ -22,5 +22,5 @@ int get_bit(unsigned int long int n, unsigned int index)
 		n >>= 1;
 		index--;
 	}
-	return (-1)
+	return (-1);
 }
