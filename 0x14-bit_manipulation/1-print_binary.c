@@ -8,12 +8,12 @@
 */
 void print_binary(unsigned long int n)
 {
-	if (!n)
+	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	unsigned long  mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	unsigned long int  mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
 
 	int isFalse = 0;
 
