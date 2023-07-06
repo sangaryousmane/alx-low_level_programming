@@ -21,5 +21,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		difference >>= 1;
 
 	}
-	return bts;
+	return (bts);
 }
