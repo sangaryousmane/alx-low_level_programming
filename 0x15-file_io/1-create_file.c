@@ -2,33 +2,30 @@
 
 
 /**
-* read_text_file - read and print a text file to std output
-* @filename: is the file's name
-* @letters: number of letters to read and print
-* Return: 0 if filename is NULL or if it fails
+* create_file - creates a file and write a content to it
+* @filename: name of the file
+* @text_content: content to be written
+* Return: 1 on success, -1 on failure
+*
 */
-ssize_t read_textfile(const char *filename, size_t letters)
+int create_file(const char *filename, char *text_content)
 {
-	int code;
-	char *b;
-	ssize_t reader, writer;
+	int c;
 
 	if (!filename)
 	{
-		return (0);
+		return (-1);
 	}
-	code = open(filename, O_RDONLY);
-	b = malloc(sizeof(char) * (letters));
 
-	if (code == -1 || !b)
+	c = open(filename, O_WRONLY | O_TRUNC, 600);
+	if (c == -1)
 	{
-		return (0);
+		write(c, "fails", sizeof("fails"));
+		return (-1);
 	}
-
-	reader = read(code, b, letters);
-	writer = write(1, b, reader);
-	
+	write(c, text_content, sizeof(text_content));
 	close(c);
-	free(b);
-	return (writer);
+
+	return (c);
+
 }
