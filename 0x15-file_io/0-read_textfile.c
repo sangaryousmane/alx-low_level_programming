@@ -12,11 +12,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *b;
 	ssize_t reader, writer, opener;
 
-	if (!filename)
+	if (filename == NULL)
 	{
 		return (0);
 	}
-	opener = open(filename, O_RDONLY);
+
 	b = malloc(sizeof(char) * letters);
 
 	if (b == NULL)
@@ -24,11 +24,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
+	opener = open(filename, ORDONLY);
 	reader = read(opener, b, letters);
 	writer = write(1, b, reader);
 	if (reader == -1 || opener == -1)
 	{
-		if (writer != reader)
+		if (writer == -1 || writer != reader)
 		{
 			free(b);
 			return (0);
