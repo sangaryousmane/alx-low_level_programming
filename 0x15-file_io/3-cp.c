@@ -8,9 +8,8 @@
  */
 void _close_file(int fd)
 {
-	int c;
-	c = close(fd);	
-	
+	int c = close(fd);
+
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
@@ -27,9 +26,7 @@ void _close_file(int fd)
  */
 char *do_buffer(char *file)
 {
-	char *b;
-	
-	b = malloc(sizeof(char) * 1024);
+	char *b = malloc(sizeof(char) * 1024);
 
 	if (b == NULL)
 	{
@@ -52,8 +49,8 @@ int main(int argc, char *argv[])
 {
 	int from, to;
 	int r, w;
-	char *buffer;	
-	
+	char *buffer;
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -63,7 +60,6 @@ int main(int argc, char *argv[])
 	from = open(argv[1], O_RDONLY);
 	r = read(from, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	
 	do {
 		if (from == -1 || r == -1)
 		{
@@ -72,7 +68,6 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 		w = write(to, buffer, r);
-		
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
