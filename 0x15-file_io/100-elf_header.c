@@ -10,7 +10,7 @@
 void check_elf(unsigned char *e_ident)
 {
 	int index;
-	
+
 	for (index = 0; index < 4; index++)
 	{
 		if (e_ident[index] != 127 &&
@@ -34,7 +34,6 @@ void _magic(unsigned char *e_ident)
 	int index = 0;
 
 	printf("  Magic:   ");
-	
 	while (index < EI_NIDENT)
 	{
 		printf("%02x", e_ident[index]);
@@ -54,7 +53,6 @@ void _magic(unsigned char *e_ident)
 void process_class(unsigned char *e_ident)
 {
 	printf("  Class:                             ");
-	
 	switch (e_ident[EI_CLASS])
 	{
 		case ELFCLASSNONE:
@@ -79,7 +77,6 @@ void process_class(unsigned char *e_ident)
 void _data(unsigned char *e_ident)
 {
 	printf("  Data:                              ");
-	
 	switch (e_ident[EI_DATA])
 	{
 		case ELFDATANONE:
@@ -102,7 +99,7 @@ void _data(unsigned char *e_ident)
  */
 void _version(unsigned char *e_ident)
 {
-	printf("  Version:                           %d",e_ident[EI_VERSION]);
+	printf("  Version:                           %d", e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
 	{
@@ -166,8 +163,7 @@ void _os(unsigned char *e_ident)
  */
 void _abi(unsigned char *e_ident)
 {
-	printf("  ABI Version:                       %d\n",
-			e_ident[EI_ABIVERSION]);
+	printf("  ABI Version:                       %d\n", e_ident[EI_ABIVERSION]);
 }
 
 /**
@@ -180,7 +176,6 @@ void _type(unsigned int e_type, unsigned char *e_ident)
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
 	printf("  Type:                              ");
-	
 	switch (e_type)
 	{
 		case ET_NONE:
@@ -268,7 +263,8 @@ void access_func(Elf64_Ehdr *header)
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
-	int o, r;	
+	int o, r;
+
 	o = open(argv[1], O_RDONLY);
 	if (o == -1)
 	{
