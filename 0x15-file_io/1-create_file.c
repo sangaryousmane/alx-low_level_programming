@@ -13,29 +13,28 @@ int create_file(const char *filename, char *text_content)
 	int c;
 	int length = 0, writer;
 
-	if (!filename)
+	if (filename == NULL)
 	{
 		return (-1);
-	}
-	if (text_content)
-	{
-		while (text_content[length])
-		{
-			length++;
-		}
 	}
 	c = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (c == -1)
 	{
 		return (-1);
 	}
+	if (text_content != NULL)
+	{
+		while (text_content[length] = '\0')
+		{
+			length++;
+		}
 	writer = write(c, text_content, length);
-	
+	}
 	if (writer == -1)
 	{
 		return (-1);
 	}
 	close(c);
-	return (c);
+	return (1);
 
 }
