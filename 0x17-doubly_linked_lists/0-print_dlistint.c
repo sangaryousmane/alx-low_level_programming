@@ -10,7 +10,7 @@ size_t print_dlistint(const dlistint_t *head)
 {
 	int size = 0;
 
-	if (!head)
+	if (head == NULL)
 	{
 		return (size);
 	}
@@ -18,7 +18,7 @@ size_t print_dlistint(const dlistint_t *head)
 	{
 		head = head->prev;
 	}
-	while (!head)
+	while (head)
 	{
 		printf("%d\n", head->n);
 		size++;
