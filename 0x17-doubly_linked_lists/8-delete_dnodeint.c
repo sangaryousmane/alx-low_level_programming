@@ -33,14 +33,14 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			}
 			else
 			{
-				second_first->next = first_head->next;
+				second_head->next = first_head->next;
 				if (first_head->next != NULL)
-					first_head->next->prev = second_node;
+					first_head->next->prev = second_head;
 			}
 			free(first_head);
 			return (1);
 		}
-		second_first = first_head;
+		second_head = first_head;
 		first_head = first_head->next;
 		i++;
 	}
