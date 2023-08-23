@@ -6,6 +6,7 @@
 #include <string.h>
 #include <ctype.h>
 
+int rand(void);
 int sub(int a, int b);
 int add(int a, int b);
 int mul(int a, int b);
