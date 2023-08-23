@@ -11,7 +11,7 @@ int sub(int a, int b);
 int add(int a, int b);
 int mul(int a, int b);
 int mod(int a, int b);
-int _div(int a, int b);
+ssize_t div(ssize_t a, ssize_t b);
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);

@@ -50,7 +50,7 @@ int mod(int a, int b)
  * @b: second arg
  * Return: the quotient of a and b
  */
-int div(int a, int b)
+ssize_t div(ssize_t a, ssize_t b)
 {
 	return (a / b);
 }
