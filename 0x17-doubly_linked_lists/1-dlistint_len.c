@@ -14,11 +14,7 @@ size_t dlistint_len(const dlistint_t *head)
 	{
 		return (size);
 	}
-	while (head->prev)
-	{
-		head = head->prev;
-	}
-	while (head)
+	while (head != NULL)
 	{
 		size++;
 		head = head->next;
