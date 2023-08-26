@@ -7,11 +7,6 @@
 #include <ctype.h>
 
 int rand(void);
-int sub(int a, int b);
-int add(int a, int b);
-int mul(int a, int b);
-int mod(int a, int b);
-int my_div(int a, int b);
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);

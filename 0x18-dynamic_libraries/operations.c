@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * sub - substract a from b
@@ -46,12 +46,12 @@ int mod(int a, int b)
 
 
 /**
- * my_div - finds the quotient of a and b
+ * div - finds the quotient of a and b
  * @a: first arg
  * @b: second arg
  * Return: the quotient of a and b
  */
-int my_div(int a, int b)
+int div(int a, int b)
 {
 	return (a / b);
 }
