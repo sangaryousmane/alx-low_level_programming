@@ -44,13 +44,14 @@ int mod(int a, int b)
 	return (a % b);
 }
 
+
 /**
- * div - finds the quotient of a and b
+ * my_div - finds the quotient of a and b
  * @a: first arg
  * @b: second arg
  * Return: the quotient of a and b
  */
-ssize_t div(ssize_t a, ssize_t b)
+int my_div(int a, int b)
 {
 	return (a / b);
 }
