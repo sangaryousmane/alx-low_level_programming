@@ -7,6 +7,8 @@
 * @s: array of string
 */
 int _strlen(char *s)
-{
-return (strlen(s));
+{   
+  int i = 0;
+  for (; s[i] != '\0'; i++);
+  return i;
 }
