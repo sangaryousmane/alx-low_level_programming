@@ -24,12 +24,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	index = key_index((const unsigned char *)key, ht->size);
-	for (i = index; ht->array[i]; i++)
+	for (counter = index; ht->array[counter]; counter++)
 	{
-		if (strcmp(ht->array[i]->key, key) == 0)
+		if (strcmp(ht->array[counter]->key, key) == 0)
 		{
-			free(ht->array[i]->value);
-			ht->array[i]->value = new_value;
+			free(ht->array[counter]->value);
+			ht->array[counter]->value = new_value;
 			return (1);
 		}
 	}
