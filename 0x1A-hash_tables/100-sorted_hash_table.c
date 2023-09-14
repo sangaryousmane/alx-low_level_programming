@@ -4,9 +4,7 @@
 /**
  * shash_table_create - Creates a sorted hash table.
  * @size: The size of new sorted hash table.
- *
- * Return: If an error occurs - NULL.
- *         Otherwise - a pointer to the new sorted hash table.
+ * Return: NULL on error, otherwise a pointer to the new hash table
  */
 shash_table_t *shash_table_create(unsigned long int size)
 {
@@ -108,7 +106,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			tmp->snext->sprev = new;
 		tmp->snext = new;
 	}
-
 	return (1);
 }
 
@@ -199,7 +196,7 @@ void shash_table_delete(shash_table_t *ht)
 		return;
 
 	node = ht->shead;
-	while (node)
+	while (node != NULL)
 	{
 		tmp = node->snext;
 		free(node->key);
