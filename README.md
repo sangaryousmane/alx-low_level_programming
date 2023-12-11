@@ -1,5 +1,4 @@
-# Low-Level Programming with C  - Data Structures, Sorting, Searching, Hast Tables
-# Singly and Doubly Linked Lists, Recursions and more Algorithms
+# Low-Level Programming with C  - Data Structures, Sorting, Searching, Hast Tables, Singly and Doubly Linked Lists, Recursions and more Algorithms
 
 ### What is in here ?
 > This repository contains programs written for the low-level programming and
